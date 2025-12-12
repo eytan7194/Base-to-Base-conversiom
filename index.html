@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Base Converter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <button class="theme-toggle" id="theme-toggle">Toggle Theme</button>
+    <h1>Base Converter</h1>
+
+    <div class="bases">
+        <div class="base-wrapper">
+            <label for="base-from">From</label>
+            <input type="number" id="base-from" min="2" max="36" value="10">
+        </div>
+
+        <div class="swap-wrapper">
+            <button class="swap-btn" id="swap-btn">↔</button>
+        </div>
+
+        <div class="base-wrapper">
+            <label for="base-to">To</label>
+            <input type="number" id="base-to" min="2" max="36" value="10">
+        </div>
+    </div>
+
+    <div class="number-wrapper">
+    <div class="scrollable-input">
+        <input type="text" id="number-input" class="number-input" placeholder="Number to convert">
+        </div>
+    </div>
+
+    <button class="convert-btn" id="convert-btn">Convert</button>
+
+    <div class="result scrollable-result" id="result">
+        <span id="number-display"></span>
+        <span class="arrow"></span>
+        <span id="converted-display"></span>
+    </div>
+
+    <div class="history scrollable-history" id="history">
+        <strong>Conversion History:</strong><br>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
